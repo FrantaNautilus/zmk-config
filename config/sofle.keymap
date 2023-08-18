@@ -14,6 +14,7 @@
         cs_t_caron: cs_t_caron {
             label = "cs_t_caron";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CS_CARON &kp CS_T>
                 ;
@@ -21,6 +22,7 @@
         cs_n_caron: cs_n_caron {
             label = "cs_n_caron";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CS_CARON &kp CS_N>
                 ;
@@ -28,6 +30,7 @@
         cs_d_caron: cs_d_caron {
             label = "cs_d_caron";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CS_CARON &kp CS_D>
                 ;
@@ -35,6 +38,7 @@
         cs_o_acute: cs_o_acute {
             label = "cs_o_acute";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CS_ACUTE &kp CS_O>
                 ;
