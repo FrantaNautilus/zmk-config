@@ -67,7 +67,7 @@
 &kp DEL     &kp Q  &kp W    &kp O    &kp R     &kp T                                    &kp U  &kp B     &kp N     &kp P    &kp F    &kp BSPC
 &kp TAB     &kp A  &kp S    &kp D    &kp E     &kp I                                    &kp H  &kp J     &kp K     &kp L    &kp Y    &kp ESC
 &kp BSLH    &kp Z  &kp X    &kp C    &kp V     &kp DQT        &tog 1       &tog 2       &kp G  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp SQT
-                   &kp LGUI &kp LALT &kp LCTRL &mo 1          &kp RET      &kp SPACE    &mo 2  &kp RCTRL &kp RALT  &kp RGUI
+                   &kp LGUI &kp LALT &mo 6     &mo 1          &lt 5 RET    &lt 1 SPACE  &mo 5  &mo 6     &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -101,9 +101,9 @@
             bindings = <
 &kp F1      &kp F2    &kp F3      &kp F4      &kp F5       &kp F6                               &kp F7    &kp F8       &kp F9       &kp F10     &kp F11     &kp F12
 &kp DEL     &kp CS_Q  &kp CS_W    &kp CS_O    &kp CS_R     &kp CS_T                             &kp CS_U  &kp CS_B     &kp CS_N     &kp CS_P    &kp CS_F    &kp BSPC
-&kp TAB     &kp CS_A  &kp CS_S    &kp CS_D    &kp CS_E     &kp CS_I                             &kp CS_H  &kp CS_J     &kp CS_K     &kp CS_L    &kp CS_Y    &kp ESC
+&lt 3 TAB   &kp CS_A  &kp CS_S    &kp CS_D    &kp CS_E     &kp CS_I                             &kp CS_H  &kp CS_J     &kp CS_K     &kp CS_L    &kp CS_Y    &lt 3 ESC
 &kp CS_BSLH &kp CS_Z  &kp CS_X    &kp CS_C    &kp CS_V     &kp CS_DQT &tog 4       &tog 2       &kp CS_G  &kp CS_M     &kp CS_COMMA &kp CS_DOT  &kp FSLH    &kp SQT
-                      &none       &none       &none        &none      &none        &none        &none     &none        &none        &none
+                      &none       &none       &none        &mo 4      &lt 5 SPACE  &lt 4 ENTER  &mo 5     &none        &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -118,13 +118,13 @@
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &kp CS_L_STROKE &kp CS_L_STROKE_CAP &none            &none               &none           &none                          &none         &none          &none           &none                &kp CS_D_STROKE_CAP &kp CS_D_STROKE
-&kp CS_OGONEK   &kp CS_DEG          &kp CS_DOT_ABOVE &none               &kp CS_R_CARON  &none                          &kp CS_U_RING &kp CS_U_ACUTE &none           &kp CS_DOUBLE_ACUTE  &kp CS_UMLAUT       &kp CS_SZ
-&trans          &kp CS_A_ACUTE      &kp CS_S_CARON   &none               &kp CS_E_CARON  &kp CS_I_ACUTE                 &kp CS_CURREN &kp CS_E_ACUTE &kp CS_CARON    &kp CS_ACUTE         &kp CS_Y_ACUTE      &trans
+&kp CS_OGONEK   &kp CS_DEG          &kp CS_DOT_ABOVE &cs_o_acute         &kp CS_R_CARON  &cs_t_caron                    &kp CS_U_RING &kp CS_U_ACUTE &cs_n_caron     &kp CS_DOUBLE_ACUTE  &kp CS_UMLAUT       &kp CS_SZ
+&trans          &kp CS_A_ACUTE      &kp CS_S_CARON   &cs_d_caron         &kp CS_E_CARON  &kp CS_I_ACUTE                 &kp CS_CURREN &kp CS_E_ACUTE &kp CS_CARON    &kp CS_ACUTE         &kp CS_Y_ACUTE      &trans
 &kp CS_CEDILLA  &kp CS_Z_CARON      &kp CS_BREVE     &kp CS_C_CARON      &kp CS_DIV      &kp CS_MULT    &none    &none  &kp CS_EURO   &kp CS_SECT    &kp CS_DQT      &kp CS_SQT           &kp CS_GRAVE        &none
-                                    &none            &none               &none          &none           &none    &none  &none         &none          &none           &none
+                                    &none            &none               &none           &trans         &trans   &trans &trans        &trans         &none           &none
             >;
 
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         cs_num_layer {
@@ -139,7 +139,7 @@
 &kp CS_DOLLAR &kp CS_MINUS &kp CS_N7 &kp CS_N8 &kp CS_N9 &kp CS_FSLH                  &kp CS_TILDE   &kp CS_FSLH &kp CS_MINUS &kp CS_UNDER  &kp CS_AMPS    &kp CS_RBKT
 &kp CS_DOT    &kp CS_N0    &kp CS_N4 &kp CS_N5 &kp CS_N6 &kp CS_EQUAL                 &kp CS_PERCENT &kp CS_STAR &kp CS_PLUS  &kp CS_CARET  &kp CS_DOLLAR  &kp CS_RBRC
 &kp CS_COMMA  &kp CS_PLUS  &kp CS_N1 &kp CS_N2 &kp CS_N3 &kp CS_STAR  &tog 4   &none  &kp CS_AT      &kp CS_LBKT &kp CS_LBRC  &kp CS_LT     &kp CS_PIPE    &kp CS_GT
-                           &none     &none     &none     &none        &none    &none  &none          &none       &none        &none
+                           &none     &none     &trans    &trans       &trans   &trans &trans         &trans      &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -175,7 +175,7 @@
 &kp PAUSE_BREAK &kp F9       &kp F10      &kp F11      &kp F12      &none                          &none        &kp F21    &kp F22     &kp F23   &kp F24    &none
 &kp SYSREQ      &kp F5       &kp F6       &kp F7       &kp F8       &none                          &none        &kp F17    &kp F18     &kp F19   &kp F20    &none
 &none           &kp F1       &kp F2       &kp F3       &kp F4       &none         &none    &none   &none        &kp F13    &kp F14     &kp F15   &kp F16    &none
-                             &none        &none        &none        &none         &none    &none   &none        &none      &none       &none
+                             &none        &none        &trans       &trans        &trans   &trans  &trans       &trans     &none       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
