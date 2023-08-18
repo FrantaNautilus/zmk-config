@@ -144,7 +144,7 @@
        // -------  Four modifiers  -------
        combo_lhyper {
             timeout-ms = <25>;
-            key-positions = <37 38 39 40>;
+            key-positions = <15 16 25 26>;
             layers = <0 1 2 4 6>;
             bindings = <&kp LA(LC(LS(LGUI)))>;
         };
@@ -157,7 +157,7 @@
         };
         combo_cs_excl {
             timeout-ms = <25>;
-            key-positions = <13 14>;
+            key-positions = <15 16>;
             layers = <2>;
             bindings = <&kp CS_EXCL>;
         };
@@ -176,7 +176,7 @@
         };
         combo_us_excl {
             timeout-ms = <25>;
-            key-positions = <13 14>;
+            key-positions = <15 16>;
             layers = <0>;
             bindings = <&kp EXCL>;
         };
@@ -283,45 +283,45 @@
        // -------  Four modifiers  -------
        combo_rhyper {
             timeout-ms = <25>;
-            key-positions = <45 46 47 48>;
+            key-positions = <19 20 33 34>;
             layers = <0 1 2 4 6>;
             bindings = <&kp LA(LC(LS(LGUI)))>;
         };
         // -------  CS symbols  -------
         combo_cs_lpar {
             timeout-ms = <25>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
             layers = <2>;
             bindings = <&kp CS_LPAR>;
         };
         combo_cs_rpar {
             timeout-ms = <25>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
             layers = <2>;
             bindings = <&kp CS_RPAR>;
         };
         combo_cs_semi {
              timeout-ms = <25>;
-            key-positions = <13 14>;
+            key-positions = <46 47>;
             layers = <2>;
             bindings = <&kp CS_SEMI>;
         };
         // -------  US symbols  -------
         combo_us_lpar {
             timeout-ms = <25>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
             layers = <0>;
             bindings = <&kp LPAR>;
         };
         combo_us_rpar {
             timeout-ms = <25>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
             layers = <0>;
             bindings = <&kp RPAR>;
         };
         combo_us_semi {
              timeout-ms = <25>;
-            key-positions = <13 14>;
+            key-positions = <46 47>;
             layers = <0>;
             bindings = <&kp SEMI>;
         };
@@ -385,7 +385,7 @@
 &kp DEL     &kp CS_Q  &kp CS_W    &kp CS_O    &kp CS_R     &kp CS_T                             &kp CS_U  &kp CS_B     &kp CS_N     &kp CS_P    &kp CS_F    &kp BSPC
 &lt 3 TAB   &kp CS_A  &kp CS_S    &kp CS_D    &kp CS_E     &kp CS_I                             &kp CS_H  &kp CS_J     &kp CS_K     &kp CS_L    &kp CS_Y    &lt 3 ESC
 &kp CS_BSLH &kp CS_Z  &kp CS_X    &kp CS_C    &kp CS_V     &kp CS_DQT &tog 4       &tog 2       &kp CS_G  &kp CS_M     &kp CS_COMMA &kp CS_DOT  &kp FSLH    &kp SQT
-                      &none       &none       &none        &mo 4      &lt 5 SPACE  &lt 4 ENTER  &mo 5     &none        &none        &none
+                      &none       &none       &mo 6        &mo 4      &lt 5 SPACE  &lt 4 ENTER  &mo 5     &mo 6        &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -439,7 +439,7 @@
 &kp C_STOP  &kp C_MUTE   &kp C_VOL_UP &kp C_VOL_DN &kp C_PLAY   &kp C_PAUSE                    &kp INS      &kp HOME   &kp UP      &kp END   &kp PG_UP  &kp BSPC
 &kp SLCK    &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &kp PSCRN                      &kp CAPS     &kp LEFT   &kp DOWN    &kp RIGHT &kp PG_DN  &kp ENTER
 &kp C_SLEEP &none        &kp C_BRI_UP &kp C_BRI_DN &none        &none         &none    &none   &kp K_CMENU  &kp K_COPY &kp K_PASTE &kp K_CUT &kp K_UNDO &kp K_REDO
-                         &none        &none        &none        &none         &none    &none   &none        &none      &none       &none
+                         &none        &none        &trans       &trans        &trans   &trans  &trans       &trans     &none       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
