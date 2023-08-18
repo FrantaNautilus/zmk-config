@@ -45,6 +45,288 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        // #######    Left hand     #######
+        // ------- Single modifier  -------
+        combo_ls {
+            timeout-ms = <25>;
+            key-positions = <27 28>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LSHFT>;
+        };
+        combo_lc {
+            timeout-ms = <25>;
+            key-positions = <26 27>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_la {
+            timeout-ms = <25>;
+            key-positions = <25 26>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LALT>;
+        };
+        combo_lw {
+            timeout-ms = <25>;
+            key-positions = <28 29>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LGUI>;
+        };
+        combo_lag {
+            timeout-ms = <25>;
+            key-positions = <37 38>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp RALT>;
+        };
+        // -------  Two modifiers  -------
+        combo_lcs {
+            timeout-ms = <25>;
+            key-positions = <26 27 28>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LS(LCTRL)>;
+        };
+        combo_lac {
+            timeout-ms = <25>;
+            key-positions = <25 26 27>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LCTRL)>;
+        };
+        combo_las {
+            timeout-ms = <25>;
+            key-positions = <14 15>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LS(LALT)>;
+        };
+        combo_lsw {
+            timeout-ms = <25>;
+            key-positions = <27 28 29>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LS(LGUI)>;
+        };
+        combo_lcw {
+            timeout-ms = <25>;
+            key-positions = <14 15 16>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LC(LGUI)>;
+        };
+        combo_law {
+            timeout-ms = <25>;
+            key-positions = <38 39 40>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LGUI)>;
+        };
+        // -------  Three modifiers  -------
+        combo_lacs {
+            timeout-ms = <25>;
+            key-positions = <25 26 27 28>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LC(LS(LALT))>;
+        };
+        combo_lcsw {
+            timeout-ms = <25>;
+            key-positions = <26 27 28 29>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LC(LS(LGUI))>;
+        };
+        combo_lasw {
+            timeout-ms = <25>;
+            key-positions = <37 38 39 40>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LS(LGUI))>;
+        };
+        combo_lacw {
+            timeout-ms = <25>;
+            key-positions = <13 14 15 16>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LC(LGUI))>;
+        };
+       // -------  Four modifiers  -------
+       combo_lhyper {
+            timeout-ms = <25>;
+            key-positions = <37 38 39 40>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LC(LS(LGUI)))>;
+        };
+        // -------  CS symbols  -------
+        combo_cs_qmark {
+            timeout-ms = <25>;
+            key-positions = <13 14>;
+            layers = <2>;
+            bindings = <&kp CS_QMARK>;
+        };
+        combo_cs_excl {
+            timeout-ms = <25>;
+            key-positions = <13 14>;
+            layers = <2>;
+            bindings = <&kp CS_EXCL>;
+        };
+        combo_cs_colon {
+            timeout-ms = <25>;
+            key-positions = <38 39>;
+            layers = <2>;
+            bindings = <&kp CS_COLON;
+        };
+        // -------  US symbols  -------
+        combo_us_qmark {
+            timeout-ms = <25>;
+            key-positions = <13 14>;
+            layers = <0>;
+            bindings = <&kp QMARK>;
+        };
+        combo_us_excl {
+            timeout-ms = <25>;
+            key-positions = <13 14>;
+            layers = <0>;
+            bindings = <&kp EXCL>;
+        };
+        combo_us_colon {
+            timeout-ms = <25>;
+            key-positions = <38 39>;
+            layers = <0>;
+            bindings = <&kp COLON;
+        };
+        // #######  Right hand  #######
+        // ------- Single modifier  -------
+        combo_rs {
+            timeout-ms = <25>;
+            key-positions = <31 32>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LSHFT>;
+        };
+        combo_rc {
+            timeout-ms = <25>;
+            key-positions = <32 33>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_ra {
+            timeout-ms = <25>;
+            key-positions = <33 34>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LALT>;
+        };
+        combo_rw {
+            timeout-ms = <25>;
+            key-positions = <30 31>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LGUI>;
+        };
+        combo_rag {
+            timeout-ms = <25>;
+            key-positions = <47 48>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp RALT>;
+        };
+        // -------  Two modifiers  -------
+        combo_rcs {
+            timeout-ms = <25>;
+            key-positions = <31 32 33>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LS(LCTRL)>;
+        };
+        combo_rac {
+            timeout-ms = <25>;
+            key-positions = <32 33 34>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LCTRL)>;
+        };
+        combo_ras {
+            timeout-ms = <25>;
+            key-positions = <20 21>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LS(LALT)>;
+        };
+        combo_rsw {
+            timeout-ms = <25>;
+            key-positions = <30 31 32>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LS(LGUI)>;
+        };
+        combo_rcw {
+            timeout-ms = <25>;
+            key-positions = <19 20 21>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LC(LGUI)>;
+        };
+        combo_raw {
+            timeout-ms = <25>;
+            key-positions = <45 46 47>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LGUI)>;
+        };
+        // -------  Three modifiers  -------
+        combo_racs {
+            timeout-ms = <25>;
+            key-positions = <31 32 33 34>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LC(LS(LALT))>;
+        };
+        combo_rcsw {
+            timeout-ms = <25>;
+            key-positions = <30 31 32 33>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LC(LS(LGUI))>;
+        };
+        combo_rasw {
+            timeout-ms = <25>;
+            key-positions = <45 46 47 48>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LS(LGUI))>;
+        };
+        combo_racw {
+            timeout-ms = <25>;
+            key-positions = <19 20 21 22>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LC(LGUI))>;
+        };
+       // -------  Four modifiers  -------
+       combo_rhyper {
+            timeout-ms = <25>;
+            key-positions = <45 46 47 48>;
+            layers = <0 1 2 4 6>;
+            bindings = <&kp LA(LC(LS(LGUI)))>;
+        };
+        // -------  CS symbols  -------
+        combo_cs_lpar {
+            timeout-ms = <25>;
+            key-positions = <18 19>;
+            layers = <2>;
+            bindings = <&kp CS_LPAR>;
+        };
+        combo_cs_rpar {
+            timeout-ms = <25>;
+            key-positions = <20 21>;
+            layers = <2>;
+            bindings = <&kp CS_RPAR>;
+        };
+        combo_cs_semi {
+             timeout-ms = <25>;
+            key-positions = <13 14>;
+            layers = <2>;
+            bindings = <&kp CS_SEMI>;
+        };
+        // -------  US symbols  -------
+        combo_us_lpar {
+            timeout-ms = <25>;
+            key-positions = <18 19>;
+            layers = <0>;
+            bindings = <&kp LPAR>;
+        };
+        combo_us_rpar {
+            timeout-ms = <25>;
+            key-positions = <20 21>;
+            layers = <0>;
+            bindings = <&kp RPAR>;
+        };
+        combo_us_semi {
+             timeout-ms = <25>;
+            key-positions = <13 14>;
+            layers = <0>;
+            bindings = <&kp SEMI>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
