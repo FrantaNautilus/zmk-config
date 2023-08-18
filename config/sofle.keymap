@@ -184,7 +184,7 @@
             timeout-ms = <25>;
             key-positions = <38 39>;
             layers = <0>;
-            bindings = <&kp COLON;
+            bindings = <&kp COLON>;
         };
         // #######  Right hand  #######
         // ------- Single modifier  -------
