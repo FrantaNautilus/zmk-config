@@ -325,6 +325,19 @@
             layers = <0>;
             bindings = <&kp SEMI>;
         };
+        // ##### Layer combos #####
+        combo_cslayer {
+            timeout-ms = <25>;
+            key-positions = <53 54>;
+            layers = <0>;
+            bindings = <&tog 3>;
+        };
+        combo_navlayer {
+            timeout-ms = <25>;
+            key-positions = <52 53>;
+            layers = <0>;
+            bindings = <&tog 5>;
+        };
     };
 
     keymap {
@@ -352,7 +365,7 @@
                    &kp LGUI &kp LALT &mo 6     &mo 1          &lt 5 SPACE    &lt 1 ENTER  &mo 5  &mo 6     &kp RALT  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         us_num_layer {
@@ -370,7 +383,7 @@
                      &none  &none  &trans &trans    &trans   &trans &trans      &trans   &none     &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         cs_base_layer {
@@ -388,7 +401,7 @@
                       &none       &none       &mo 6        &mo 4      &lt 5 SPACE  &lt 4 ENTER  &mo 5     &mo 6        &none        &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         cs_dia_layer {
@@ -406,7 +419,7 @@
                                     &none            &none               &none           &trans         &trans   &trans &trans        &trans         &none           &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         cs_num_layer {
@@ -424,7 +437,7 @@
                            &none     &none     &trans    &trans       &trans   &trans &trans         &trans      &none        &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav_layer {
@@ -442,7 +455,7 @@
                          &none        &none        &trans       &trans        &trans   &trans  &trans       &trans     &none       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         fun_layer {
@@ -460,7 +473,7 @@
                              &none        &none        &trans       &trans        &trans   &trans  &trans       &trans     &none       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
