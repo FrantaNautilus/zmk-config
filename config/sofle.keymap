@@ -28,7 +28,7 @@
 // |   \   |  Z  |  X  |  C   |  V   |  "   |   TG   |  |  TG   |  G   |  M    |  ,    |  .   |   /   |   '   |
 //               |     |      | MO   |  MO 1|  SPACE |  | ENTER | MO 5 | MO    |       | GUI  |
             bindings = <
-&kp F1      &kp F2 &kp F3   &kp F4   &kp F5    &kp F6                                   &kp F7 &kp F8    &bkp F9   &kp F10  &kp F11  &kp F12
+&kp F1      &kp F2 &kp F3   &kp F4   &kp F5    &kp F6                                   &kp F7 &kp F8    &kp F9    &kp F10  &kp F11  &kp F12
 &kp DEL     &kp Q  &kp W    &kp O    &kp R     &kp T                                    &kp U  &kp B     &kp N     &kp P    &kp F    &kp BSPC
 &kp TAB     &kp A  &kp S    &kp D    &kp E     &kp I                                    &kp H  &kp J     &kp K     &kp L    &kp Y    &kp ESC
 &kp BSLH    &kp Z  &kp X    &kp C    &kp V     &kp DQT        &none        &none        &kp G  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp SQT
