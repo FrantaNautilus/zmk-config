@@ -276,7 +276,7 @@ name: name##_macro {                      \
 &kp DEL  &kp F           &kp Y        &kp O         &kp U         &kp Z                                           &kp W     &kp D         &kp N         &kp L        &kp B        &kp BSPC
 &kp SQT  &lhrm LGUI H    &lhrm LALT I &lhrm LCTRL E &lhrm LSHFT A &kp J                                           &kp G     &rhrm LSHFT T &rhrm LCTRL R &rhrm LALT S &rhrm LGUI P &kp SEMI
 &kp BSLH &lhrm LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V       &emacs_m_x         &emacs_c_x       &kp K     &kp M         &kp ESC       &kp Q        &kp X        &kp FSLH
-                         &kp LCTRL    &kp LALT      &tog USNUM    &kp LSHFT   &lt USNAV SPACE    &lt USNUM ENTER  &kp RSHFT &sl USFUN     &kp LALT      &kp LGUI
+                         &kp LCTRL    &kp LALT      &tog USNUM    &kp LSHFT   &lt USNAV ENTER    &lt USNUM SPACE  &kp RSHFT &sl USFUN     &kp LALT      &kp LGUI
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
