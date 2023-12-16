@@ -131,9 +131,9 @@ name: name##_macro {                      \
 
     behaviors {
             HTK(lhrm, balanced, TAPPING_TERM)
-                HTK(rhrm, balanced, TAPPING_TERM)
-                HTMOSL(ldia_mosl, hold-preferred, TAPPING_TERM)
-                HTMOSL(rdia_mosl, hold-preferred, TAPPING_TERM)
+            HTK(rhrm, balanced, TAPPING_TERM)
+            HTMOSL(ldia_mosl, hold-preferred, TAPPING_TERM)
+            HTMOSL(rdia_mosl, hold-preferred, TAPPING_TERM)
             csquote: csquote {
                 label          = "csquote";
                 compatible     = "zmk,behavior-mod-morph";
@@ -267,15 +267,15 @@ name: name##_macro {                      \
 //
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   | F2  | F3  |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |  DEL  |  F  |  Y  |  O   |  U   |  Z   |                   |  W   |  D    |  N    |  L   |   B   | BKSPC |
-// |  '↑"  |  H  |  I  |  E   |  A   |  J   |                   |  G   |  T    |  R    |  S   |   P   |  ;↑:  |
-// |  \↑|  | .↑< | ,↑> | TAB  |  C   |  V   |   TG   |  |  TG   |  K   |  M    | ESC   |  Q   |   X   |  /↑?  |
+// |  DEL  |  G  |  L  | ESC  |  P   |  ,↑> |                   |  .↑< |  F    |  U    |  D   |   K   | BKSPC |
+// |  '↑"  |  A  |  R  |  E   |  N   |  B   |                   |  G   |  S    |  I    |  T   |   O   |  ;↑:  |
+// |  \↑|  |  Z  |  W  | TAB  |  H   |  J   |   TG   |  |  TG   |  V   |  C    |  Y    |  M   |   X   |  /↑?  |
 //               |     |      | MO   |  MO 1|  SPACE |  | ENTER | MO 5 | MO    |       | GUI  |
             bindings = <
 &kp F1   &kp F2          &kp F3       &kp F4        &kp F5        &kp F6                                          &kp F7    &kp F8        &kp F9        &kp F10      &kp F11      &kp F12
-&kp DEL  &kp F           &kp Y        &kp O         &kp U         &kp Z                                           &kp W     &kp D         &kp N         &kp L        &kp B        &kp BSPC
-&kp SQT  &lhrm LGUI H    &lhrm LALT I &lhrm LCTRL E &lhrm LSHFT A &kp J                                           &kp G     &rhrm LSHFT T &rhrm LCTRL R &rhrm LALT S &rhrm LGUI P &kp SEMI
-&kp BSLH &lhrm LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V       &emacs_m_x         &emacs_c_x       &kp K     &kp M         &kp ESC       &kp Q        &kp X        &kp FSLH
+&kp DEL  &kp G           &kp L        &kp ESC       &kp P         &kp COMMA                                       &kp DOT   &kp F         &kp U         &kp D        &kp K        &kp BSPC
+&kp SQT  &lhrm LGUI A    &lhrm LALT R &lhrm LCTRL E &lhrm LSHFT N &kp B                                           &kp G     &rhrm LSHFT S &rhrm LCTRL I &rhrm LALT T &rhrm LGUI O &kp SEMI
+&kp BSLH &lhrm LCTRL Z   &kp W        &kp TAB       &kp C         &kp V       &emacs_m_x         &emacs_c_x       &kp V     &kp C         &kp Y         &kp M        &kp X        &kp FSLH
                          &kp LCTRL    &kp LALT      &tog USNUM    &kp LSHFT   &lt USNAV ENTER    &lt USNUM SPACE  &kp RSHFT &sl USFUN     &kp LALT      &kp LGUI
             >;
 
@@ -340,16 +340,16 @@ name: name##_macro {                      \
 //
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   | F2  | F3  |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |  DEL  |  F  |  Y  |  O   |  U   |  Z   |                   |  W   |  D    |  N    |  L   |   B   | BKSPC |
-// |  '↑"  |  H  |  I  |  E   |  A   |  J   |                   |  G   |  T    |  R    |  S   |   P   |  ;↑:  |
-// |  \↑|  | .↑< | ,↑> | TAB  |  C   |  V   |   TG   |  |  TG   |  K   |  M    | ESC   |  Q   |   X   |  /↑?  |
+// |  DEL  |  G  |  L  | ESC  |  P   | ,↑>  |                   | .↑<  |  F    |  U    |  D   |   K   | BKSPC |
+// |  '↑"  |  A  |  R  |  E   |  N   |  B   |                   |  G   |  S    |  I    |  T   |   O   |  ;↑:  |
+// |  \↑|  |  Z  |  W  | TAB  |  H   |  J   |   TG   |  |  TG   |  V   |  C    |  Y    |  M   |   X   |  /↑?  |
 //               |     |      | MO   |  MO 1|  SPACE |  | ENTER | MO 5 | MO    |       | GUI  |
             bindings = <
-&kp F1      &kp F2             &kp F3          &kp F4           &kp F5                 &kp F6                                     &kp F7    &kp F8                 &kp F9           &kp F10         &kp F11         &kp F12
-&kp DEL     &kp CS_F           &kp CS_Y        &lt CSDIA CS_O   &kp CS_U               &kp CS_Z                                   &kp CS_W  &kp CS_D               &lt CSDIA CS_N   &kp CS_L        &kp CS_B        &kp BSPC
-&csquote    &lhrm LGUI CS_H    &lhrm LALT CS_I &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                   &kp CS_G  &rhrm LSHFT CS_T       &rhrm LCTRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &cssemi
-&csbslh     &csdot             &cscomma        &kp TAB          &kp CS_C               &kp CS_V  &emacs_m_x      &emacs_c_x       &kp CS_K  &kp CS_M               &kp ESC          &kp CS_Q        &kp CS_X        &csfslh
-                               &kp LCTRL       &kp LALT         &ldia_mosl CSFUN CSDIA &kp LSHFT &lt CSNAV ENTER &lt CSNUM SPACE  &kp LSHFT &rdia_mosl CSFUN CSDIA &kp LALT         &kp LGUI
+&kp F1      &kp F2             &kp F3          &kp F4           &kp F5                 &kp F6                                     &kp F7     &kp F8                 &kp F9           &kp F10         &kp F11         &kp F12
+&kp DEL     &kp CS_G           &kp CS_L        &lt CSDIA ESC    &kp CS_P               &cscomma                                   &csdot     &kp CS_F               &lt CSDIA CS_F   &kp CS_D        &kp CS_K        &kp BSPC
+&csquote    &lhrm LGUI CS_A    &lhrm LALT CS_R &lhrm LCTRL CS_E &lhrm LSHFT CS_N       &kp CS_B                                   &kp CS_G   &rhrm LSHFT CS_S       &rhrm LCTRL CS_I &rhrm LALT CS_T &rhrm LGUI CS_O &cssemi
+&csbslh     &kp CS_Z           &kp CS_DOT      &kp TAB          &kp CS_H               &kp CS_J  &emacs_m_x      &emacs_c_x       &kp CS_V   &kp CS_C               &kp Y            &kp CS_M        &kp CS_X        &csfslh
+                               &kp LCTRL       &kp LALT         &ldia_mosl CSFUN CSDIA &kp LSHFT &lt CSNAV ENTER &lt CSNUM SPACE  &kp LSHFT  &rdia_mosl CSFUN CSDIA &kp LALT         &kp LGUI
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -357,16 +357,16 @@ name: name##_macro {                      \
 
         cs_dia_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  DEL  |  °  |  ý  |  ó   |  ů   |  ž   |                   |  ú   |  ď   |  ň    |  ẞ   |   ß   | BKSPC |
-// |   º   |  é  |  í  |  ě   |  á   |  ´   |                   |  ˇ   |  ť   |  ř    |  š   |   é   |   §   |
-// |   ¦   |  ¨  |     |      |  č   |  ı   |                   |  ×   |  ←   |  ↓    |  ↑   |   →   |   ÷   |
+// |  DEL  |  ←  |  ↑  |  ↓   |  →   |      |                   |      |  ú   |  ů    |  ď   |   ß   | BKSPC |
+// |   º   |  á  |  ř  |  ě   |  ň   |  ´   |                   |  ˇ   |  š   |  í    |  ť   |   ó   |   §   |
+// |   ¦   |  ž  |  ÷  |  ×   |  č   |  ı   |                   |  ¨   |  č   |  ý    |      |   ẞ   |       |
 //                            |      |      |  SPACE |  | ENTER |      |      |
                          bindings = <
-&none             &none            &none          &none          &none          &none                               &none           &none         &none          &none           &none          &none
-&kp DEL           &kp CS_DEAD_RING &kp CS_Y_ACUTE &cs_o_acute    &kp CS_U_RING  &kp CS_Z_CARON                      &kp CS_U_ACUTE  &cs_d_caron   &cs_n_caron    &kp CS_SZ_SMALL &kp CS_SZ      &kp BSPC
-&kp CS_DEG        &kp CS_E_ACUTE   &kp CS_I_ACUTE &kp CS_E_CARON &kp CS_A_ACUTE &kp CS_ACUTE                        &kp CS_CARON    &cs_t_caron   &kp CS_R_CARON &kp CS_S_CARON  &kp CS_E_ACUTE &kp CS_SECT
-&kp CS_PSEUDOPIPE &kp CS_UMLAUT    &none          &none          &kp CS_C_CARON &kp CS_NEGATE                       &kp CS_MULT     &kp CS_LARROW &kp CS_DARROW  &kp CS_UARROW   &kp CS_RARROW  &kp CS_DIV
-                                   &none          &none          &to CSDEF      &to CSDEF      &to CSDEF  &to CSDEF &to CSDEF       &to CSDEF     &none          &none
+&none             &none            &none          &none          &none          &none                               &none            &none          &none          &none           &none            &none
+&kp DEL           &kp CS_LARROW    &kp CS_DARROW  &kp CS_UARROW  &kp CS_RARROW  &none                               &kp CS_DEAD_RING &kp CS_U_ACUTE &kp CS_U_RING  &cs_d_caron     &kp CS_SZ        &kp BSPC
+&kp CS_DEG        &kp CS_A_ACUTE   &kp CS_R_CARON &kp CS_E_CARON &cs_n_caron    &kp CS_ACUTE                        &kp CS_CARON     &kp CS_S_CARON &kp CS_I_ACUTE &cs_t_caron     &cs_o_acute      &kp CS_SECT
+&kp CS_PSEUDOPIPE &kp CS_Z_CARON   &kp CS_DIV     &kp CS_MULT    &kp CS_C_CARON &kp CS_NEGATE  &none      &none     &kp CS_UMLAUT    &kp CS_C_CARON &kp CS_Y_ACUTE &none           &kp CS_SZ_SMALL  &none
+                                   &none          &none          &to CSDEF      &to CSDEF      &to CSDEF  &to CSDEF &to CSDEF        &to CSDEF      &none          &none
                 >;
         };
 
@@ -380,7 +380,7 @@ name: name##_macro {                      \
 &none               &none           &none         &none          &none             &none                                 &none            &none                &none              &none              &none               &none
 &kp DEL             &kp CS_RING     &kp CS_YEN    &kp CS_OCROSS  &kp CS_OCROSS_CAP &none                                 &kp CS_D_STROKE  &kp CS_D_STROKE_CAP  &kp CS_BAR_ABOVE   &kp CS_L_STROKE    &kp CS_L_STROKE_CAP &kp BSPC
 &kp CS_DOUBLE_ACUTE &kp CS_H_STROKE &kp CS_OGONEK &kp CS_EURO    &kp CS_AE         &kp CS_PARAG                          &kp CS_RMARK     &kp CS_BOTTOM_SQT    &kp CS_UPPER_SQT_L &kp CS_UPPER_SQT_R &kp CS_PLINE        &kp CS_PLINE_CAP
-&kp CS_DEAD_GRAVE_L &kp CS_HAT      &kp CS_BREVE  &kp CS_CEDILLA &kp CS_CMARK      &kp CS_DOT_ABOVE                      &kp CS_T_STROKE  &kp CS_T_STROKE_CAP  &kp CS_ETA         &kp CS_OMEGA       &kp CS_A_INDEX      &kp CS_DEAD_GRAVE_R
+&kp CS_DEAD_GRAVE_L &kp CS_HAT      &kp CS_BREVE  &kp CS_CEDILLA &kp CS_CMARK      &kp CS_DOT_ABOVE &none      &none     &kp CS_T_STROKE  &kp CS_T_STROKE_CAP  &kp CS_ETA         &kp CS_OMEGA       &kp CS_A_INDEX      &kp CS_DEAD_GRAVE_R
                                     &none          &none         &to CSDEF         &to CSDEF        &to CSDEF  &to CSDEF &to CSDEF        &to CSDEF            &none              &none
                 >;
         };
