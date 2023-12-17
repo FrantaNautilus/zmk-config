@@ -346,9 +346,9 @@ name: name##_macro {                      \
 //               |     |      | MO   |  MO 1|  SPACE |  | ENTER | MO 5 | MO    |       | GUI  |
             bindings = <
 &kp F1      &kp F2             &kp F3          &kp F4           &kp F5                 &kp F6                                     &kp F7     &kp F8                 &kp F9           &kp F10         &kp F11         &kp F12
-&kp DEL     &kp CS_G           &kp CS_L        &lt CSDIA ESC    &kp CS_P               &cscomma                                   &csdot     &kp CS_F               &lt CSDIA CS_F   &kp CS_D        &kp CS_K        &kp BSPC
+&kp DEL     &kp CS_G           &kp CS_L        &lt CSDIA ESC    &kp CS_P               &cscomma                                   &csdot     &kp CS_F               &lt CSDIA CS_U   &kp CS_D        &kp CS_K        &kp BSPC
 &csquote    &lhrm LGUI CS_A    &lhrm LALT CS_R &lhrm LCTRL CS_E &lhrm LSHFT CS_N       &kp CS_B                                   &kp CS_G   &rhrm LSHFT CS_S       &rhrm LCTRL CS_I &rhrm LALT CS_T &rhrm LGUI CS_O &cssemi
-&csbslh     &kp CS_Z           &kp CS_W        &kp TAB          &kp CS_H               &kp CS_J  &emacs_m_x      &emacs_c_x       &kp CS_V   &kp CS_C               &kp Y            &kp CS_M        &kp CS_X        &csfslh
+&csbslh     &kp CS_Z           &kp CS_W        &kp TAB          &kp CS_H               &kp CS_J  &emacs_m_x      &emacs_c_x       &kp CS_V   &kp CS_C               &kp CS_Y         &kp CS_M        &kp CS_X        &csfslh
                                &kp LCTRL       &kp LALT         &ldia_mosl CSFUN CSDIA &kp LSHFT &lt CSNAV ENTER &lt CSNUM SPACE  &kp LSHFT  &rdia_mosl CSFUN CSDIA &kp LALT         &kp LGUI
             >;
 
