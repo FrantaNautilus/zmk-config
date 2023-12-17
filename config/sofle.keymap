@@ -275,7 +275,7 @@ name: name##_macro {                      \
 &kp F1   &kp F2          &kp F3       &kp F4        &kp F5        &kp F6                                          &kp F7    &kp F8        &kp F9        &kp F10      &kp F11      &kp F12
 &kp DEL  &kp G           &kp L        &kp ESC       &kp P         &kp COMMA                                       &kp DOT   &kp F         &kp U         &kp D        &kp K        &kp BSPC
 &kp SQT  &lhrm LGUI A    &lhrm LALT R &lhrm LCTRL E &lhrm LSHFT N &kp B                                           &kp G     &rhrm LSHFT S &rhrm LCTRL I &rhrm LALT T &rhrm LGUI O &kp SEMI
-&kp BSLH &lhrm LCTRL Z   &kp W        &kp TAB       &kp C         &kp V       &emacs_m_x         &emacs_c_x       &kp V     &kp C         &kp Y         &kp M        &kp X        &kp FSLH
+&kp BSLH &lhrm LCTRL Z   &kp W        &kp TAB       &kp H         &kp J       &emacs_m_x         &emacs_c_x       &kp V     &kp C         &kp Y         &kp M        &kp X        &kp FSLH
                          &kp LCTRL    &kp LALT      &tog USNUM    &kp LSHFT   &lt USNAV ENTER    &lt USNUM SPACE  &kp RSHFT &sl USFUN     &kp LALT      &kp LGUI
             >;
 
@@ -331,7 +331,7 @@ name: name##_macro {                      \
         };
 
         cs_def_layer {
-// ------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
 // |  0    |  1  |  2  |  3   |  4   |  5   |          x         |  6   |  7    |  8    |  9   |  10   |  11   |
 // |  12   |  13 |  14 |  15  |  16  |  17  |          x         |  18  |  19   |  20   |  21  |  22   |  23   |
 // |  24   |  25 |  26 |  27  |  28  |  29  |          x         |  30  |  31   |  32   |  33  |  34   |  35   |
@@ -348,7 +348,7 @@ name: name##_macro {                      \
 &kp F1      &kp F2             &kp F3          &kp F4           &kp F5                 &kp F6                                     &kp F7     &kp F8                 &kp F9           &kp F10         &kp F11         &kp F12
 &kp DEL     &kp CS_G           &kp CS_L        &lt CSDIA ESC    &kp CS_P               &cscomma                                   &csdot     &kp CS_F               &lt CSDIA CS_F   &kp CS_D        &kp CS_K        &kp BSPC
 &csquote    &lhrm LGUI CS_A    &lhrm LALT CS_R &lhrm LCTRL CS_E &lhrm LSHFT CS_N       &kp CS_B                                   &kp CS_G   &rhrm LSHFT CS_S       &rhrm LCTRL CS_I &rhrm LALT CS_T &rhrm LGUI CS_O &cssemi
-&csbslh     &kp CS_Z           &kp CS_DOT      &kp TAB          &kp CS_H               &kp CS_J  &emacs_m_x      &emacs_c_x       &kp CS_V   &kp CS_C               &kp Y            &kp CS_M        &kp CS_X        &csfslh
+&csbslh     &kp CS_Z           &kp CS_W        &kp TAB          &kp CS_H               &kp CS_J  &emacs_m_x      &emacs_c_x       &kp CS_V   &kp CS_C               &kp Y            &kp CS_M        &kp CS_X        &csfslh
                                &kp LCTRL       &kp LALT         &ldia_mosl CSFUN CSDIA &kp LSHFT &lt CSNAV ENTER &lt CSNUM SPACE  &kp LSHFT  &rdia_mosl CSFUN CSDIA &kp LALT         &kp LGUI
             >;
 
